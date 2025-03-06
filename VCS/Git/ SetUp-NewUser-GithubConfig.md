@@ -16,7 +16,7 @@
 
         ssh-keygen -t rsa -b 4096 -C "your.email@example.com"
 
-## Run the ssh-keygen command and specify a filename iy you want:
+## ssh-keygen command with specify a filename :
 
         ssh-keygen -t rsa -b 4096 -C "your.email@example.com" -f ~/.ssh/your_key_name
 
@@ -43,14 +43,14 @@
 
 ## Test SSH Connection
 
-## Run: ssh -T git@github.com
-        output: Hi <username account>! You've successfully authenticated, but GitHub does not provide shell access.
-
+## verify ssh connection with gihub:
+        ssh -T git@github.com
 ## Set the Correct Git Remote URL
 
         git remote set-url origin git@github.com:JFKTBonny/Devops_Resources.git
 
-## un: git remote -v to verify
+## verify the remote repo is set:
+        git remote -v
 
 ## Push to GitHub
 
